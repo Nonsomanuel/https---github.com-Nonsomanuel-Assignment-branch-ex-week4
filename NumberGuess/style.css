@@ -1,0 +1,27 @@
+body{
+    background-color: blanchedalmond;
+    place-items: center;
+}
+.box{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+}
+.output{
+    justify-content: center;
+    text-align: center;
+}
+.container{
+    margin: 15% auto;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    border: 5px solid red;
+    width: 500px;
+    height: 200px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    
+}

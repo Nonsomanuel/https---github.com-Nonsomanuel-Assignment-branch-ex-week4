@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightgrey;
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.grid-container{
+    display: grid;
+   /* padding: 2em;*/
+    grid-template-areas: 
+    "a a c"
+    "b b b" 
+    ;
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+   
+
+    
+}
+.grid-container div{
+    padding: 2em;
+    border-radius: 10px;
+    /*align-items: center;*/
+   
+}
+.grid-item-1{
+    background-color:  hsl(31, 77%, 52%);
+    grid-area: a;
+    
+    
+}
+.grid-item-2{
+    background-color: hsl(184, 100%, 22%);
+    grid-area: b;
+}
+.grid-item-3{
+    background-color: hsl(179, 100%, 13%);
+    grid-area: c;
+    justify-items: center;
+    align-content: center;
+    
+}
+p{
+    font-size: 15px;
+    padding: 10px;
+    
+    
+}
+.btn{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    margin-top: 7%;
+    color:  hsl(31, 77%, 52%);;
+}
+
+.btn-1{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    margin-top: 7%;
+    color:  hsl(184, 100%, 22%);
+}
+.btn-2{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    margin-top: 7%;
+    color:  hsl(179, 100%, 13%);
+}
+@media screen and (max-width: 1440px) {
+    .grid-container{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .grid-container{
+        width: 100%;
+    }
+}
